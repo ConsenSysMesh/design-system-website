@@ -6,7 +6,7 @@ import Nav from '../components/nav'
 const Home = () => (
   <div>
     <Head title="Home" />
-    hello world!
+    Make it easier to create dApps with outstanding UX.
   </div>
 )
 
