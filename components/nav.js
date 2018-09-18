@@ -75,6 +75,9 @@ const Nav = () => (
         <li>
           <Link href="#!">Documentation</Link>
         </li>
+        <li>
+          <Link href="#!">Releases</Link>
+        </li>
       </LinkList>
     </NavList>
   </NavWrap>
