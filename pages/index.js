@@ -6,8 +6,6 @@ import Link from 'next/link'
 import ThemeProvider from '../components/ThemeProvider'
 import Typography from '../components/typography'
 import Container from '../components/Container'
-import Button from '../components/Button.js'
-
 
 import Head from '../components/head'
 import Nav from '../components/nav'
