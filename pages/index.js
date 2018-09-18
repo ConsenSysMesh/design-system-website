@@ -4,15 +4,15 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 import ThemeProvider from '../components/ThemeProvider'
+import Typography from '../components/typography'
+import Container from '../components/Container'
+import Button from '../components/Button'
+
 
 import Head from '../components/head'
 import Nav from '../components/nav'
 import Header from '../components/header'
 import Footer from '../components/footer'
-
-import Button from '../components/Button'
-
-import Typography from '../components/typography'
 
 const Masthead = styled.section`
   position: relative;
@@ -34,16 +34,21 @@ const Home = () => (
 
       <main role="main">
         <Masthead>
-          {/* masthead section */}
-          <Header/>
+          <Container>
+
+            {/* masthead section */}
+            <Header/>
+          </Container>
         </Masthead>
         <section>
-          {/* body section */}
-          <h1>Motivation</h1>
-          <p>Make it easier to create dApps with outstanding UX.</p>
-          <h1>Getting Started</h1>
-          <h1>Installation</h1>
-          <h1>Usage</h1>
+          <Container>
+            {/* body section */}
+            <h1>Motivation</h1>
+            <p>Make it easier to create dApps with outstanding UX.</p>
+            <h1>Getting Started</h1>
+            <h1>Installation</h1>
+            <h1>Usage</h1>
+          </Container>
         </section>
       </main>
       <Footer/>
