@@ -1,13 +1,17 @@
 import React from 'react';
+import Button from '../components/button'
+import Heading from '../components/heading'
 
 const Header = ({}) => (
   <header>
-    <h1>
+    <Heading.h1>
       "literate-sniffle"
-    </h1>
-    <h1>The most important heading on this page</h1>
-    <h2>With some supplementary information</h2>
-    <button>Get Started</button>
+    </Heading.h1>
+    <Heading.h1>The most important heading on this page</Heading.h1>
+    <Heading.h2>With some supplementary information</Heading.h2>
+    <Button>Get Started</Button>
+    <Button.outline>Github</Button.outline>
+    <Button.text>text button</Button.text>
   </header>
 );
 
