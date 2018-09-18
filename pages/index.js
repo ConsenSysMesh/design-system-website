@@ -10,7 +10,7 @@ import Nav from '../components/nav'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
-import Button from '../components/button'
+import Button from '../components/Button'
 
 import Typography from '../components/typography'
 
@@ -23,6 +23,7 @@ const Masthead = styled.section`
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  background: rgba(0,0,0, 0.1)
 `
 
 const Home = () => (
