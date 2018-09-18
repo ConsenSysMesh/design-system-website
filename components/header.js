@@ -10,7 +10,7 @@ const Header = ({}) => (
     <Heading.h1>The most important heading on this page</Heading.h1>
     <Heading.h2>With some supplementary information</Heading.h2>
     <Button>Get Started</Button>
-    <Button.outline>Github</Button.outline>
+    <Button.outline>outline button</Button.outline>
     <Button.text>text button</Button.text>
   </header>
 );
