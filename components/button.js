@@ -9,7 +9,6 @@ const Button = styled.button`
   cursor: pointer;
 
   /* Color the border and text with theme.main */
-  ${'' /* color: ${props => props.theme.main}; */}
   color: white;
   background: ${props => props.theme.colors.primary};
   border: 2px solid ${props => props.theme.colors.primary};
@@ -26,9 +25,9 @@ Button.outline = styled(Button)`
 `
 
 Button.text = styled(Button)`
-color: ${props => props.theme.colors.primary};
-background: transparent;
-border: 2px solid transparent;
+  color: ${props => props.theme.colors.primary};
+  background: transparent;
+  border: 2px solid transparent;
 `
 
 export default Button;
