@@ -1,5 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
+import NextLink from 'next/link'
+
+import Link from '../components/Link'
 
 const links = [
   { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
@@ -12,9 +14,9 @@ const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
+        <NextLink prefetch href="/">
+          <Link>Home</Link>
+        </NextLink>
       </li>
       {/* <ul>
         {links.map(({ key, href, label }) => (
@@ -27,10 +29,10 @@ const Nav = () => (
       </ul> */}
       <ul>
         <li>
-          <a href="#!">Documentation</a>
+          <Link href="#!">Documentation</Link>
         </li>
         <li>
-          <a href="#!">Github</a>
+          <Link href="#!">Github</Link>
         </li>
         <li>v0.1.0</li>
       </ul>

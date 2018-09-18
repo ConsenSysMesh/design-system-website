@@ -1,22 +1,23 @@
 import React from 'react';
+import Link from '../components/Link'
 
 const Footer = ({}) => (
   <footer>
     <ul>
       <li>
-        <a href="#!">Github</a>
+        <Link href="#!">Github</Link>
       </li>
       <li>
-        <a href="#!">Storybook/Examples</a>
+        <Link href="#!">Storybook/Examples</Link>
       </li>
       <li>
-        <a href="#!">Community</a>
+        <Link href="#!">Community</Link>
       </li>
       <li>
-        <a href="#!">Roadmap</a>
+        <Link href="#!">Roadmap</Link>
       </li>
       <li>
-        <a href="#!">Team</a>
+        <Link href="#!">Team</Link>
       </li>
     </ul>
   </footer>
