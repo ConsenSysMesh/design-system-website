@@ -1,12 +1,18 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import Link from 'next/link'
+
+import ThemeProvider from '../components/ThemeProvider'
+
 import Head from '../components/head'
 import Nav from '../components/nav'
-
-import Footer from '../components/footer'
 import Header from '../components/header'
+import Footer from '../components/footer'
 
-import styled from 'styled-components'
+import Button from '../components/button'
+
+import Typography from '../components/typography'
 
 const Masthead = styled.section`
   position: relative;
@@ -20,26 +26,28 @@ const Masthead = styled.section`
 `
 
 const Home = () => (
-  <div>
-    <Head title="Home" />
-    <Nav/>
+  <ThemeProvider>
+    <div>
+      <Head title="Home" />
+      <Nav/>
 
-    <main role="main">
-      <Masthead>
-        {/* masthead section */}
-        <Header/>
-      </Masthead>
-      <section>
-        {/* body section */}
-        <h1>Motivation</h1>
-        <p>Make it easier to create dApps with outstanding UX.</p>
-        <h1>Getting Started</h1>
-        <h1>Installation</h1>
-        <h1>Usage</h1>
-      </section>
-    </main>
-    <Footer/>
-  </div>
+      <main role="main">
+        <Masthead>
+          {/* masthead section */}
+          <Header/>
+        </Masthead>
+        <section>
+          {/* body section */}
+          <h1>Motivation</h1>
+          <p>Make it easier to create dApps with outstanding UX.</p>
+          <h1>Getting Started</h1>
+          <h1>Installation</h1>
+          <h1>Usage</h1>
+        </section>
+      </main>
+      <Footer/>
+    </div>
+  </ThemeProvider>
 )
 
 export default Home
