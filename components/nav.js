@@ -3,63 +3,81 @@ import NextLink from 'next/link'
 
 import Link from '../components/Link'
 
-const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+import styled from 'styled-components'
+
+import {
+  color,
+  space,
+  width,
+  flex,
+  display
+} from 'styled-system'
+
+
+const NavWrap = styled.nav`
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100vw;
+
+  ${space}
+  ${width}
+  ${color}
+`
+
+const NavList = styled.ul`
+  & {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 4rem;
+  }
+
+  ${display}
+  ${flex}
+`
+
+const LinkList = styled.ul`
+  & {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  > li + li {
+    margin-left: 1rem;
+  }
+`
 
 const Nav = () => (
-  <nav>
-    <ul>
+  <NavWrap width={1} px={3} bg='white'>
+    <NavList display='flex' flex='row nowrap'>
       <li>
         <NextLink prefetch href="/">
           <Link>Home</Link>
         </NextLink>
       </li>
-      {/* <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-        <Link href={href}>
-        <a>{label}</a>
-        </Link>
-          </li>
-        ))}
-      </ul> */}
-      <ul>
+
+      <LinkList>
         <li>
-          <Link href="#!">Documentation</Link>
+          v0.1.0
         </li>
         <li>
           <Link href="#!">Github</Link>
         </li>
-        <li>v0.1.0</li>
-      </ul>
-    </ul>
-
-    <style jsx>{`
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
+        <li>
+          <Link href="#!">Documentation</Link>
+        </li>
+      </LinkList>
+    </NavList>
+  </NavWrap>
 )
 
 export default Nav
