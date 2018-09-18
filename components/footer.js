@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = ({}) => (
-  <div>
+  <footer>
     <ul>
       <li>
         <a href="#!">Github</a>
@@ -19,7 +19,7 @@ const Footer = ({}) => (
         <a href="#!">Team</a>
       </li>
     </ul>
-  </div>
+  </footer>
 );
 
 export default Footer;
