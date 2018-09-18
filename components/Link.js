@@ -13,7 +13,7 @@ const Link = styled.a`
   }
 `
 
-Link.PropTypes = {
+Link.propTypes = {
   color: PropTypes.string
 }
 
