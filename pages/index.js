@@ -6,6 +6,7 @@ import Link from 'next/link'
 import ThemeProvider from '../components/ThemeProvider'
 import Typography from '../components/typography'
 import Container from '../components/Container'
+import CodeBlock from '../components/CodeBlock'
 
 import Head from '../components/head'
 import Nav from '../components/nav'
@@ -44,8 +45,28 @@ const Home = () => (
             <h1>Motivation</h1>
             <p>Make it easier to create dApps with outstanding UX.</p>
             <h1>Getting Started</h1>
+
             <h1>Installation</h1>
+            <pre>
+              <code>
+                $ npm install literate-sniffle
+              </code>
+            </pre>
             <h1>Usage</h1>
+
+            <CodeBlock>
+              {`
+import React from 'react';
+import Button from '@material-ui/core/Button';
+
+const App = () => (
+  <Button variant="contained" color="primary">
+    Hello World
+  </Button>
+);
+              `}
+            </CodeBlock>
+
           </Container>
         </section>
       </main>
