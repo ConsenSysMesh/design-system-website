@@ -25,6 +25,17 @@ const Masthead = styled.section`
   background: rgba(0,0,0, 0.1)
 `
 
+const exampleCode = `
+import React from 'react';
+import Button from '@material-ui/core/Button';
+
+const App = () => (
+  <Button variant="contained" color="primary">
+    Hello World
+  </Button>
+);
+`;
+
 const Home = () => (
   <ThemeProvider>
     <div>
@@ -44,27 +55,14 @@ const Home = () => (
             {/* body section */}
             <h1>Motivation</h1>
             <p>Make it easier to create dApps with outstanding UX.</p>
+            
             <h1>Getting Started</h1>
 
             <h1>Installation</h1>
-            <CodeBlock>
-              $ npm install literate-sniffle
-            </CodeBlock>
+            <CodeBlock code={'$ npm install literate-sniffle'} />
 
             <h1>Usage</h1>
-
-            <CodeBlock>
-              {`
-import React from 'react';
-import Button from '@material-ui/core/Button';
-
-const App = () => (
-  <Button variant="contained" color="primary">
-    Hello World
-  </Button>
-);
-              `}
-            </CodeBlock>
+            <CodeBlock code={exampleCode} />
 
           </Container>
         </section>
