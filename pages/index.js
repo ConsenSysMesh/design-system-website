@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import Link from 'next/link'
 
-import ThemeProvider from '../components/ThemeProvider'
 import Typography from '../components/typography'
 import Container from '../components/container'
 
@@ -11,6 +10,8 @@ import Head from '../components/head'
 import Nav from '../components/nav'
 import Header from '../components/header'
 import Footer from '../components/footer'
+
+import ThemeProvider from '../components/ThemeProvider'
 
 const Masthead = styled.section`
   position: relative;
