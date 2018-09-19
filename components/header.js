@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../components/Button.js'
+import Button from '../components/button.js'
 import Heading from '../components/Heading'
 
 const Header = ({}) => (
