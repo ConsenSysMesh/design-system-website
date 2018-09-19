@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Link from './link'
-import Container from './container'
+import Link from './Link'
+import Container from './Container'
 
 const FooterStyled = styled.footer`
   color: white;
