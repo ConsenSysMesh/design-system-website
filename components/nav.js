@@ -1,7 +1,7 @@
 import React from 'react'
 import NextLink from 'next/link'
 
-import Link from './link'
+import Link from '../components/link'
 
 import styled from 'styled-components'
 
