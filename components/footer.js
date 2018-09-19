@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Link from '../components/Link'
-import Container from '../components/Container'
+import Link from './Link'
+import Container from './Container'
 
 const FooterStyled = styled.footer`
   color: white;
@@ -24,6 +24,7 @@ const Footer = ({}) => (
     <MyContainer>
       <div>
         logo here
+
         <p>Copyright © 2018 ConsenSys Inc.</p>
       </div>
       <div>
