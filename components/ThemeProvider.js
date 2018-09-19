@@ -3,7 +3,7 @@ import {
   injectGlobal
 } from 'styled-components'
 
-import theme from '../components/theme'
+import theme from './theme'
 
 injectGlobal`
   html {

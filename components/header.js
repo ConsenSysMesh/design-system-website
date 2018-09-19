@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../components/button'
-import Heading from '../components/heading'
+import Button from './button'
+import Heading from './heading'
 
 const Header = ({}) => (
   <header>
