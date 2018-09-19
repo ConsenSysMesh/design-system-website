@@ -8,7 +8,7 @@ const theme = {
       '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
   },
   colors: {
-    primary: 'purple',
+    primary: '#5552DC',
     black: '#000',
     white: '#FFF'
   }
