@@ -47,11 +47,10 @@ const Home = () => (
             <h1>Getting Started</h1>
 
             <h1>Installation</h1>
-            <pre>
-              <code>
-                $ npm install literate-sniffle
-              </code>
-            </pre>
+            <CodeBlock>
+              $ npm install literate-sniffle
+            </CodeBlock>
+
             <h1>Usage</h1>
 
             <CodeBlock>
