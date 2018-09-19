@@ -12,6 +12,9 @@ injectGlobal`
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  body {
+    margin: 0;
+  }
 `
 
 const ThemeProvider = ({...props}) => {
