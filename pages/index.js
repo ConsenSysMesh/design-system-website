@@ -7,6 +7,7 @@ import ThemeProvider from '../components/ThemeProvider'
 import Typography from '../components/typography'
 import Container from '../components/Container'
 import CodeBlock from '../components/CodeBlock'
+import Heading from '../components/Heading'
 
 import Head from '../components/head'
 import Nav from '../components/nav'
@@ -22,7 +23,7 @@ const Masthead = styled.section`
   flex-flow: row;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0, 0.1)
+  background: #F2F4F7;
 `
 
 const exampleCode = `
@@ -53,9 +54,17 @@ const Home = () => (
         <section>
           <Container>
             {/* body section */}
+            <Heading.h1>Lorem ipsum dolor sit amet, consectetur.</Heading.h1>
+            <Heading.h2>Lorem ipsum dolor sit amet, consectetur.</Heading.h2>
+            <Heading.h3>Lorem ipsum dolor sit amet, consectetur.</Heading.h3>
+            <Heading.h4>Lorem ipsum dolor sit amet, consectetur.</Heading.h4>
+            <Heading.h5>Lorem ipsum dolor sit amet, consectetur.</Heading.h5>
+            <Heading.h6>Lorem ipsum dolor sit amet, consectetur.</Heading.h6>
+            <Heading>Lorem ipsum dolor sit amet, consectetur.</Heading>
+
             <h1>Motivation</h1>
             <p>Make it easier to create dApps with outstanding UX.</p>
-            
+
             <h1>Getting Started</h1>
 
             <h1>Installation</h1>
