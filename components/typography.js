@@ -10,7 +10,7 @@ injectGlobal`
   :root {
     font-family: ${theme.fonts.sansSerif};
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
   body {
