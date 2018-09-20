@@ -16,14 +16,35 @@ import Footer from '../components/footer'
 
 const Masthead = styled.section`
   position: relative;
-  height: 80vh;
+  height: calc(100vmax/7*2.5);
   width: 100%;
+  margin-top: 64px;
 
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
   background: #F2F4F7;
+  overflow: hidden;
+`
+
+const BgGridFigure = styled.div`
+  display: grid;
+  grid: repeat(7, calc(100vmax/7)) / repeat(7, calc(100vmax/7));
+  width: 100%;
+  height: 100%;
+  ${'' /* overflow: hidden; */}
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  ${'' /* opacity: 0.5; */}
+
+  transform: translateY(calc(-100vmax/7*0.5));
+
+  > .box {
+    background: linear-gradient(135deg, #F2F4F7 50%, #FFF 50%);
+  }
+
 `
 
 const exampleCode = `
@@ -45,9 +66,50 @@ const Home = () => (
 
       <main role="main">
         <Masthead>
+          <BgGridFigure>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+          </BgGridFigure>
+          {/* masthead section */}
           <Container>
-
-            {/* masthead section */}
             <Header/>
           </Container>
         </Masthead>
