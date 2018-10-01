@@ -23,8 +23,6 @@ const Footer = ({}) => (
   <FooterStyled>
     <MyContainer>
       <div>
-        logo here
-
         <p>Copyright © 2018 ConsenSys Inc.</p>
       </div>
       <div>

@@ -100,6 +100,15 @@ const Masthead = styled.section`
   overflow: hidden;
 `
 
+const Hr = styled.hr`
+  width: 3rem;
+  height: .25rem;
+  background: ${props => props.theme.colors.primary};
+  display: block;
+  margin: 12px 0 2rem;
+  border: none;
+`
+
 // const BgGridFigure = styled.div`
 //   display: grid;
 //   grid: repeat(7, calc(100vmax/7)) / repeat(7, calc(100vmax/7));
@@ -147,7 +156,7 @@ const Home = () => (
           <Container>
             <Box my={5}>
               <Heading.h1>Our Approach</Heading.h1>
-              <hr/>
+              <Hr/>
               <Flex my={4} width={1}>
                 <Box width={[1, 1/3]} mr={4}>
                   <Flex my={3}>
@@ -182,7 +191,7 @@ const Home = () => (
               {/* body section */}
 
               <Heading.h1>Getting Started</Heading.h1>
-              <hr/>
+              <Hr/>
 
               <Heading.h3>Installation</Heading.h3>
               <CodeBlock code={'$ npm install literate-sniffle'} />
