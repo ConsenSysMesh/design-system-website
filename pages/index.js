@@ -28,24 +28,23 @@ const Masthead = styled.section`
   overflow: hidden;
 `
 
-const BgGridFigure = styled.div`
-  display: grid;
-  grid: repeat(7, calc(100vmax/7)) / repeat(7, calc(100vmax/7));
-  width: 100%;
-  height: 100%;
-  ${'' /* overflow: hidden; */}
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  ${'' /* opacity: 0.5; */}
-
-  transform: translateY(calc(-100vmax/7*0.5));
-
-  > .box {
-    background: linear-gradient(135deg, #F2F4F7 50%, #FFF 50%);
-  }
-
-`
+// const BgGridFigure = styled.div`
+//   display: grid;
+//   grid: repeat(7, calc(100vmax/7)) / repeat(7, calc(100vmax/7));
+//   width: 100%;
+//   height: 100%;
+//   ${'' /* overflow: hidden; */}
+//   position: absolute;
+//   top: 0;
+//   z-index: 0;
+//   ${'' /* opacity: 0.5; */}
+//
+//   transform: translateY(calc(-100vmax/7*0.5));
+//
+//   > .box {
+//     background: linear-gradient(135deg, #F2F4F7 50%, #FFF 50%);
+//   }
+// `
 
 const exampleCode = `
 import React from 'react';
@@ -66,48 +65,7 @@ const Home = () => (
 
       <main role="main">
         <Masthead>
-          <BgGridFigure>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-            <div className="box"></div>
-          </BgGridFigure>
+
           {/* masthead section */}
           <Container>
             <Header/>
@@ -115,14 +73,23 @@ const Home = () => (
         </Masthead>
         <section>
           <Container>
+            <div>
+              <h1>Flexible</h1>
+              <p>We aim to impose as few constraints as possible. We’re here to build a system that can handle rapid change without disruption. </p>
+            </div>
+            <div>
+              <h1>Tested</h1>
+              <p>We get to know the builders and users of Web3. We test with the people who use our tools.  </p>
+            </div>
+            <div>
+              <h1>Human</h1>
+              <p>Blockchain is confusing. We must invest in being understandable. </p>
+            </div>
+          </Container>
+        </section>
+        <section>
+          <Container>
             {/* body section */}
-            <Heading.h1>Lorem ipsum dolor sit amet, consectetur.</Heading.h1>
-            <Heading.h2>Lorem ipsum dolor sit amet, consectetur.</Heading.h2>
-            <Heading.h3>Lorem ipsum dolor sit amet, consectetur.</Heading.h3>
-            <Heading.h4>Lorem ipsum dolor sit amet, consectetur.</Heading.h4>
-            <Heading.h5>Lorem ipsum dolor sit amet, consectetur.</Heading.h5>
-            <Heading.h6>Lorem ipsum dolor sit amet, consectetur.</Heading.h6>
-            <Heading>Lorem ipsum dolor sit amet, consectetur.</Heading>
 
             <h1>Motivation</h1>
             <p>Make it easier to create dApps with outstanding UX.</p>

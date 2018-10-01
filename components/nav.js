@@ -25,6 +25,9 @@ const NavWrap = styled.nav`
   ${space}
   ${width}
   ${color}
+
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.10);
 `
 
 const NavList = styled.ul`
@@ -59,11 +62,11 @@ const LinkList = styled.ul`
 const Nav = () => (
   <NavWrap width={1} px={3} bg='white'>
     <NavList display='flex' flex='row nowrap'>
-      <li>
+      {/* <li>
         <NextLink prefetch href="/">
           <Link>Home</Link>
         </NextLink>
-      </li>
+      </li> */}
 
       <LinkList>
         <li>
@@ -76,7 +79,7 @@ const Nav = () => (
           <Link href="#!">Documentation</Link>
         </li>
         <li>
-          <Link href="#!">Releases</Link>
+          <Link href="#!">Storybook</Link>
         </li>
       </LinkList>
     </NavList>

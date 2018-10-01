@@ -6,7 +6,7 @@ import Container from './Container'
 
 const FooterStyled = styled.footer`
   color: white;
-  background: rgba(0,0,0, 0.9);
+  background: #6141ED;
   padding: 3rem 0 4rem;
 `
 
