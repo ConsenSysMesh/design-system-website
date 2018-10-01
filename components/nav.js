@@ -62,11 +62,11 @@ const LinkList = styled.ul`
 const Nav = () => (
   <NavWrap width={1} px={3} bg='white'>
     <NavList display='flex' flex='row nowrap'>
-      {/* <li>
-        <NextLink prefetch href="/">
+      <li>
+        {/* <NextLink prefetch href="/">
           <Link>Home</Link>
-        </NextLink>
-      </li> */}
+        </NextLink> */}
+      </li>
 
       <LinkList>
         <li>
