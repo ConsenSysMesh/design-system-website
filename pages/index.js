@@ -14,6 +14,8 @@ import Nav from '../components/nav'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
+import ReactSVG from 'react-svg'
+
 import {
   space,
   color,
@@ -143,37 +145,51 @@ const Home = () => (
         </Masthead>
         <section>
           <Container>
-            <Flex>
-              <Box width={[1, 1/3]} mr={4}>
-                <h1>Flexible</h1>
-                <p>We aim to impose as few constraints as possible. We’re here to build a system that can handle rapid change without disruption. </p>
-              </Box>
-              <Box width={[1, 1/3]} mr={4}>
-                <h1>Tested</h1>
-                <p>We get to know the builders and users of Web3. We test with the people who use our tools.  </p>
-              </Box>
-              <Box width={[1, 1/3]} >
-                <h1>Human</h1>
-                <p>Blockchain is confusing. We must invest in being understandable. </p>
-              </Box>
-            </Flex>
+            <Box my={5}>
+              <Heading.h1>Our Approach</Heading.h1>
+              <hr/>
+              <Flex my={4} width={1}>
+                <Box width={[1, 1/3]} mr={4}>
+                  <Flex my={3}>
+                    <ReactSVG src='static/svg/fig-1.svg' />
+                  </Flex>
+                  <h1>Flexible</h1>
+                  <p>We aim to impose as few constraints as possible. We’re here to build a system that can handle rapid change without disruption. </p>
+                </Box>
+                <Box width={[1, 1/3]} mr={4}>
+                  <Flex my={3}>
+                    <ReactSVG src='static/svg/fig-2.svg' />
+                  </Flex>
+                  <h1>Tested</h1>
+                  <p>We get to know the builders and users of Web3. We test with the people who use our tools.  </p>
+                </Box>
+                <Box width={[1, 1/3]} >
+                  <Flex my={3}>
+                    <ReactSVG src='static/svg/fig-3.svg' />
+                  </Flex>
+                  <h1>Human</h1>
+                  <p>Blockchain is confusing. We must invest in being understandable. </p>
+                </Box>
+              </Flex>
+              <h1>Motivation</h1>
+              <p>Make it easier to create dApps with outstanding UX.</p>
+            </Box>
           </Container>
         </section>
         <section>
           <Container>
-            {/* body section */}
+            <Box my={5}>
+              {/* body section */}
 
-            <h1>Motivation</h1>
-            <p>Make it easier to create dApps with outstanding UX.</p>
+              <Heading.h1>Getting Started</Heading.h1>
+              <hr/>
 
-            <h1>Getting Started</h1>
+              <Heading.h3>Installation</Heading.h3>
+              <CodeBlock code={'$ npm install literate-sniffle'} />
 
-            <h1>Installation</h1>
-            <CodeBlock code={'$ npm install literate-sniffle'} />
-
-            <h1>Usage</h1>
-            <CodeBlock code={exampleCode} />
-
+              <Heading.h3>Usage</Heading.h3>
+              <CodeBlock code={exampleCode} />
+            </Box>
           </Container>
         </section>
       </main>
