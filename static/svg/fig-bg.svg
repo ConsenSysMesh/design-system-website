@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="718px" height="640px" viewBox="0 0 718 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-1-Copy-5" transform="translate(-722.000000, 0.000000)" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(722.000000, -81.000000)">
+                <g id="Group-5" fill="#FFFFFF" opacity="0.7">
+                    <polygon id="Triangle-Copy-71" points="479 481 479 721 239 721"></polygon>
+                    <polygon id="Triangle-Copy-78" points="719 0 719 240 479 240"></polygon>
+                    <polygon id="Triangle-Copy-72" points="240 481 240 721 0 721"></polygon>
+                    <polygon id="Triangle-Copy-74" points="478 242 478 482 238 482"></polygon>
+                    <polygon id="Triangle-Copy-77" points="718 242 718 482 478 482"></polygon>
+                    <polygon id="Triangle-Copy-76" points="718 481 718 721 478 721"></polygon>
+                </g>
+                <g id="Group-6" transform="translate(478.000000, 241.000000)">
+                    <polygon id="Triangle-Copy-79" fill="#6141ED" transform="translate(120.000000, 120.000000) scale(-1, -1) translate(-120.000000, -120.000000) " points="240 0 240 240 0 240"></polygon>
+                    <polygon id="Triangle-Copy-80" fill="#7E66EC" opacity="0.484375" points="0 120 0 0 120 0"></polygon>
+                    <polygon id="Triangle-Copy-81" fill="#7E66EC" points="120 0 120 120 0 120"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

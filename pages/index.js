@@ -98,6 +98,11 @@ const Masthead = styled.section`
   justify-content: center;
   background: #F2F4F7;
   overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  background-image: url('/static/svg/fig-bg.svg');
 `
 
 const Hr = styled.hr`
