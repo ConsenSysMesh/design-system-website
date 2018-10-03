@@ -6,7 +6,7 @@ import Button from './Button'
 
 const Header = ({}) => (
   <header>
-    <Heading.h1 fontSize={[5, 6]}>Literate-sniffle</Heading.h1>
+    <Heading.h1 fontSize={[5, 6]}>"literate-sniffle" Design System</Heading.h1>
     <Text.p>React component library for building dApps.</Text.p>
 
     <Button>Get Started</Button>
