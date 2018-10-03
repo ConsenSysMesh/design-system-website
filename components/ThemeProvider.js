@@ -14,6 +14,11 @@ injectGlobal`
   }
   body {
     margin: 0;
+    background: white;
+    width: auto;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 `
 
