@@ -1,5 +1,5 @@
 const theme = {
-  breakpoints: [32, 48, 64],
+
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fontSizes: [12, 14, 16, 20, 24, 36, 48, 80, 96],
   // fontWeights: [100, 200, 300, 400, 500],
@@ -12,7 +12,14 @@ const theme = {
     primary: '#5552DC',
     black: '#000',
     white: '#FFF'
-  }
+  },
+  shadows: [
+    '0 2px 7px 0 rgba(0,0,0,0.10)'
+  ],
+  radii: [
+    '4px',
+    '8px'
+  ]
 }
 
 export default theme
