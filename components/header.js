@@ -10,8 +10,8 @@ const Header = ({}) => (
     <Text.p>With some supplementary information</Text.p>
 
     <Button>Get Started</Button>
-    <Button.outline>outline button</Button.outline>
-    <Button.text>text button</Button.text>
+    <Button.outline>Documentation</Button.outline>
+    {/* <Button.text>text button</Button.text> */}
   </header>
 );
 
