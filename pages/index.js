@@ -8,6 +8,7 @@ import Typography from '../components/typography'
 import Container from '../components/Container'
 import CodeBlock from '../components/CodeBlock'
 import Heading from '../components/Heading'
+import Text from '../components/Text'
 import Hr from '../components/Hr'
 import {Flex, Box} from '../components/Box'
 
@@ -72,33 +73,37 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1>Our Approach</Heading.h1>
+              <Heading.h1 fontSize={[4, 5]}>Motivation</Heading.h1>
+              <Hr/>
+              <Text.p>Make it easier to create dApps with outstanding UX.</Text.p>
+              <Text.p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam blanditiis, totam aspernatur tempore possimus voluptas quidem, facere qui voluptatibus laborum distinctio debitis numquam similique, labore voluptatem. Id reprehenderit eum sed!</Text.p>
+            </Box>
+            <Box my={5}>
+              <Heading.h1 fontSize={[4, 5]}>Our Approach</Heading.h1>
               <Hr/>
               <Flex my={4} width={1} flexDirection={['column', 'row']}>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-1.svg' />
                   </Flex>
-                  <h1>Flexible</h1>
-                  <p>We aim to impose as few constraints as possible. We’re here to build a system that can handle rapid change without disruption. </p>
+                  <Heading.h3 fontSize={[2, 4]}>Flexible</Heading.h3>
+                  <Text.p>We aim to impose as few constraints as possible. We’re here to build a system that can handle rapid change without disruption. </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-2.svg' />
                   </Flex>
-                  <h1>Tested</h1>
-                  <p>We get to know the builders and users of Web3. We test with the people who use our tools.  </p>
+                  <Heading.h3 fontSize={[2, 4]}>Tested</Heading.h3>
+                  <Text.p>We get to know the builders and users of Web3. We test with the people who use our tools.  </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} >
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-3.svg' />
                   </Flex>
-                  <h1>Human</h1>
-                  <p>Blockchain is confusing. We must invest in being understandable. </p>
+                  <Heading.h3 fontSize={[2, 4]}>Human</Heading.h3>
+                  <Text.p>Blockchain is confusing. We must invest in being understandable. </Text.p>
                 </Box>
               </Flex>
-              <h1>Motivation</h1>
-              <p>Make it easier to create dApps with outstanding UX.</p>
             </Box>
           </Container>
         </section>
@@ -106,16 +111,13 @@ const Home = () => (
           <Container>
             <Box my={5}>
               {/* body section */}
-
-              <Heading.h1>Getting Started</Heading.h1>
+              <Heading.h1 fontSize={[4, 5]}>Getting Started</Heading.h1>
               <Hr/>
-
-              <Heading.h3>Installation</Heading.h3>
+              <Heading.h3 fontSize={[2, 4]}>Installation</Heading.h3>
               <Box boxShadow={0} borderRadius={0}>
                 <CodeBlock code={'$ npm install literate-sniffle'} />
               </Box>
-
-              <Heading.h3>Usage</Heading.h3>
+              <Heading.h3 fontSize={[2, 4]}>Usage</Heading.h3>
               <Box boxShadow={0} borderRadius={0}>
                 <CodeBlock code={exampleCode} />
               </Box>
