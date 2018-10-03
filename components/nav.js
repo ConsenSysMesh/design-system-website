@@ -70,7 +70,7 @@ const Nav = () => (
 
       <LinkList>
         <li>
-          v0.1.0
+          <Link href="#!">v0.1.0</Link>
         </li>
         <li>
           <Link href="#!">Github</Link>
