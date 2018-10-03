@@ -6,8 +6,8 @@ import Container from './Container'
 
 const FooterStyled = styled.footer`
   color: white;
-  background: #6141ED;
-  padding: 3rem 0 4rem;
+  background: ${props => props.theme.colors.primary};
+  ${'' /* padding: 3rem 0 4rem; */}
 `
 
 const MyContainer = styled(Container)`
@@ -25,26 +25,26 @@ const Footer = ({}) => (
       <div>
         <p>Copyright © 2018 ConsenSys Inc.</p>
       </div>
-      <div>
+      {/* <div>
         "QUICK LINKS"
         <ul>
           <li>
-            <Link href="#!">Github</Link>
+        <Link href="#!">Github</Link>
           </li>
           <li>
-            <Link href="#!">Storybook/Examples</Link>
+        <Link href="#!">Storybook/Examples</Link>
           </li>
           <li>
-            <Link href="#!">Community</Link>
+        <Link href="#!">Community</Link>
           </li>
           <li>
-            <Link href="#!">Roadmap</Link>
+        <Link href="#!">Roadmap</Link>
           </li>
           <li>
-            <Link href="#!">Team</Link>
+        <Link href="#!">Team</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </MyContainer>
   </FooterStyled>
 );
