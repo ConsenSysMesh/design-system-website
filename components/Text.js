@@ -2,12 +2,13 @@ import React from 'react';
 
 import styled from 'styled-components'
 
-import { fontSize, space } from 'styled-system'
+import { fontSize, space, color } from 'styled-system'
 
 const Text = styled.div`
   color: inherit;
   ${fontSize}
   ${space}
+  ${color}
 `
 
 Text.span = Text.withComponent('span')
