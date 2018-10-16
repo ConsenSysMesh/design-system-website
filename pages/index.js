@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Link from 'next/link'
+import Link from '../components/Link'
 
 import ThemeProvider from '../components/ThemeProvider'
 import Typography from '../components/typography'
@@ -127,7 +127,7 @@ const Home = () => (
               <Heading.h1 fontSize={[4, 5]}>Made by ConsenSys Design</Heading.h1>
               <Hr/>
               <Text.p>
-                Sniffle is created by the <a href="#!">ConsenSys Design Circle.</a> Want to help us define the roadmap? Submit feedback or feature requests on the <a href="#!">Sniffle GitHub page.</a>
+                Sniffle is created by the <Link href="#!">ConsenSys Design Circle.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Sniffle GitHub page.</Link>
               </Text.p>
             </Box>
           </Container>
