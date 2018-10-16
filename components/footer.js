@@ -23,7 +23,7 @@ const Footer = ({}) => (
   <FooterStyled>
     <MyContainer>
       <Link href="#1">Made by ConsenSys Design</Link>
-      <Text color={'gray'}>© 2018 ConsenSys Inc.</Text>
+      <Text color='#888D95'>© 2018 ConsenSys Inc.</Text>
     </MyContainer>
   </FooterStyled>
 );
