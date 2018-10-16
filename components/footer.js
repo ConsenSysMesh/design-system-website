@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Link from './Link'
 import Container from './Container'
 
+import Text from './Text'
+
 const FooterStyled = styled.footer`
   color: white;
   background: #F2F4F7;
@@ -21,7 +23,7 @@ const Footer = ({}) => (
   <FooterStyled>
     <MyContainer>
       <Link href="#1">Made by ConsenSys Design</Link>
-      <div>© 2018 ConsenSys Inc.</div>
+      <Text color={'gray'}>© 2018 ConsenSys Inc.</Text>
     </MyContainer>
   </FooterStyled>
 );
