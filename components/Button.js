@@ -6,7 +6,7 @@ import { tint } from 'polished'
 const Button = styled.button.attrs({
   fgcolor: props => props.theme.colors.white,
   bgcolor: props => props.theme.colors.primary,
-  hovercolor: props => tint(0.9, props.theme.colors.primary)
+  hovercolor: props => tint(0.1, props.theme.colors.primary)
 })`
   font: inherit;
   color: inherit;
@@ -18,7 +18,7 @@ const Button = styled.button.attrs({
   font-size: 1rem;
   font-weight: bolder;
   ${'' /* line-height: 48px; */}
-  height: 48px;
+  height: 56px;
   padding: 0 1.5rem;
   border-radius: 4px;
   box-shadow:
@@ -46,7 +46,7 @@ const Button = styled.button.attrs({
 Button.outline = styled(Button).attrs({
   fgcolor: props => props.theme.colors.primary,
   bgcolor: props => props.theme.colors.white,
-  hovercolor: props => tint(0.1, props.theme.colors.primary)
+  hovercolor: props => tint(0.9, props.theme.colors.primary)
 })`
   color: ${props => props.fgcolor};
   background-color: transparent;
