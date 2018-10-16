@@ -73,35 +73,32 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[4, 5]}>Motivation</Heading.h1>
+              <Heading.h1 fontSize={[4, 5]}>Why Sniffle?</Heading.h1>
               <Hr/>
-              <Text.p>Make it easier to create dApps with outstanding UX.</Text.p>
-              <Text.p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam blanditiis, totam aspernatur tempore possimus voluptas quidem, facere qui voluptatibus laborum distinctio debitis numquam similique, labore voluptatem. Id reprehenderit eum sed!</Text.p>
+              <Text.p>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Sniffle is here to make life easier for everyone. Components in Sniffle are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
             </Box>
             <Box my={5}>
-              <Heading.h1 fontSize={[4, 5]}>Our Approach</Heading.h1>
-              <Hr/>
               <Flex my={4} width={1} flexDirection={['column', 'row']}>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-1.svg' />
                   </Flex>
                   <Heading.h3 fontSize={[2, 4]}>Flexible</Heading.h3>
-                  <Text.p>We aim to impose as few constraints as possible. We’re here to build a system that can handle rapid change without disruption. </Text.p>
+                  <Text.p>Your tech stack and workflow are yours to decide. We impose as few constraints as possible. </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-2.svg' />
                   </Flex>
-                  <Heading.h3 fontSize={[2, 4]}>Tested</Heading.h3>
-                  <Text.p>We get to know the builders and users of Web3. We test with the people who use our tools.  </Text.p>
+                  <Heading.h3 fontSize={[2, 4]}>Research-driven</Heading.h3>
+                  <Text.p>We are constantly talking to dApp designers, developers, and users to understand common challenges and effective UI patterns. </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} >
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-3.svg' />
                   </Flex>
                   <Heading.h3 fontSize={[2, 4]}>Human</Heading.h3>
-                  <Text.p>Blockchain is confusing. We must invest in being understandable. </Text.p>
+                  <Text.p>Blockchain is confusing. We are a dedicated team, invested in being understandable and approachable.</Text.p>
                 </Box>
               </Flex>
             </Box>
@@ -121,6 +118,17 @@ const Home = () => (
               <Box boxShadow={0} borderRadius={0}>
                 <CodeBlock code={exampleCode} />
               </Box>
+            </Box>
+          </Container>
+        </section>
+        <section>
+          <Container>
+            <Box my={5}>
+              <Heading.h1 fontSize={[4, 5]}>Made by ConsenSys Design</Heading.h1>
+              <Hr/>
+              <Text.p>
+                Sniffle is created by the <a href="#!">ConsenSys Design Circle.</a> Want to help us define the roadmap? Submit feedback or feature requests on the <a href="#!">Sniffle GitHub page.</a>
+              </Text.p>
             </Box>
           </Container>
         </section>
