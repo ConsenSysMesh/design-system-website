@@ -3,6 +3,11 @@ import styled from 'styled-components'
 
 import { tint } from 'polished'
 
+import {
+  space,
+  width,
+} from 'styled-system'
+
 const Button = styled.button.attrs({
   fgcolor: props => props.theme.colors.white,
   bgcolor: props => props.theme.colors.primary,
@@ -14,10 +19,11 @@ const Button = styled.button.attrs({
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   font-size: 1rem;
-  font-weight: bolder;
-  ${'' /* line-height: 48px; */}
+  font-weight: bold;
   height: 56px;
   padding: 0 2rem;
   border-radius: 4px;
@@ -38,9 +44,9 @@ const Button = styled.button.attrs({
       0 3px 6px rgba(0,0,0,.08)
     ;
   }
-  &:not(:last-of-type) {
-    margin-right: 1rem;
-  }
+
+  ${space}
+  ${width}
 `;
 
 Button.outline = styled(Button).attrs({
