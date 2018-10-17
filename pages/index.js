@@ -74,7 +74,9 @@ const Home = () => (
             <Box my={5}>
               <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
               <Hr/>
-              <Text.p fontSize={[1, 2]}>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. Components in Rimble are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
+              <Text.p fontSize={[1, 2]}>
+                Decentralized applications (dApps) require users to learn new patterns and they present new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. As an open source project, Rimble aims to create common dApp UX patterns, validated through user research, and built for developers.
+              </Text.p>
 
               <Flex mt={4} width={1} flexDirection={['column', 'row']}>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
@@ -121,7 +123,7 @@ const Home = () => (
               <Heading.h1 fontSize={[3, 4]}>Made by ConsenSys Design</Heading.h1>
               <Hr/>
               <Text.p>
-                Rimble is created by the <Link href="#!">ConsenSys Design Circle.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Rimble GitHub page.</Link>
+                Rimble is created by <Link href="#!">ConsenSys Design.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Rimble</Link> GitHub page.
               </Text.p>
             </Box>
           </Container>
