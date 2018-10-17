@@ -68,7 +68,7 @@ const Nav = () => (
             <Link>Home</Link>
           </NextLink> */}
         </li>
-
+        
         <LinkList>
           <li>
             <Link href="#!">v0.1.0</Link>
