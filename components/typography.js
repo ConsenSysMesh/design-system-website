@@ -2,15 +2,15 @@ import { injectGlobal } from 'styled-components'
 import theme from './theme'
 
 injectGlobal`
-  ${'' /* @font-face {
-    font-family: "Operator Mono";
-    src: url("../fonts/Operator-Mono.ttf");
-  } */}
+  @import url('./static/inter-ui-web/inter-ui.css');
 
   :root {
-    font-family: ${theme.fonts.sansSerif};
+    font-family:
+      ${theme.fonts.primary},
+      ${theme.fonts.sansSerif}
+    ;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   body {
