@@ -12,6 +12,9 @@ const theme = {
     modularScale(5, '1em', 1.25),
     modularScale(6, '1em', 1.25)
   ],
+  fontWeights: [
+    400, 500, 600, 700, 800, 900
+  ],
   fonts: {
     serif: 'athelas, georgia, times, serif',
     sansSerif:

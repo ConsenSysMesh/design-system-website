@@ -110,9 +110,9 @@ const Home = () => (
               {/* body section */}
               <Heading.h1 fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
-              <Heading.h2 fontSize={[2, 3]}>Installation</Heading.h2>
+              <Heading.h2 fontSize={2} fontWeight={1}>Installation</Heading.h2>
               <CodeBlock code={'$ npm install rimble'} />
-              <Heading.h2 fontSize={[2, 3]}>Usage</Heading.h2>
+              <Heading.h2 fontSize={2} fontWeight={1}>Usage</Heading.h2>
               <CodeBlock code={exampleCode} />
             </Box>
           </Container>
