@@ -79,14 +79,14 @@ const Home = () => (
             </Box>
             <Box my={5}>
               <Flex my={4} width={1} flexDirection={['column', 'row']}>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
+                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-1.svg' />
                   </Flex>
                   <Heading.h2 fontSize={[2, 3]}>Flexible</Heading.h2>
                   <Text.p>Your tech stack and workflow are yours to decide. We impose as few constraints as possible. </Text.p>
                 </Box>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
+                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-2.svg' />
                   </Flex>
