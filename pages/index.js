@@ -74,7 +74,7 @@ const Home = () => (
             <Box my={5}>
               <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
               <Hr/>
-              <Text.p fontSize={2}>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. Components in Rimble are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
+              <Text.p fontSize={[1, 2]}>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. Components in Rimble are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
 
               <Flex mt={4} width={1} flexDirection={['column', 'row']}>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
