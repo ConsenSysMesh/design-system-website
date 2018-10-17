@@ -19,7 +19,7 @@ const Button = styled.button.attrs({
   font-weight: bolder;
   ${'' /* line-height: 48px; */}
   height: 56px;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   border-radius: 4px;
   box-shadow:
     0 4px 6px rgba(50,50,93,.11),
