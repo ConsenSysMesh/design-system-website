@@ -1,14 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import Link from './Link'
 import Container from './Container'
-
 import Text from './Text'
+import Link from './Link'
 
 const FooterStyled = styled.footer`
-  color: white;
-  background: #F2F4F7;
+  background: ${props => props.theme.colors['primary-light']};
 `
 
 const MyContainer = styled(Container)`
@@ -22,10 +20,10 @@ const MyContainer = styled(Container)`
 const Footer = ({}) => (
   <FooterStyled>
     <MyContainer>
-      <Link href="#1">Made by ConsenSys Design</Link>
+      <Link href="#!">Made by ConsenSys Design</Link>
       <Text color='#888D95'>© 2018 ConsenSys Inc.</Text>
     </MyContainer>
   </FooterStyled>
-);
+)
 
-export default Footer;
+export default Footer
