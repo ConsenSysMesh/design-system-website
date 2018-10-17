@@ -40,7 +40,7 @@ const NavList = styled.ul`
     justify-content: space-between;
     align-items: center;
 
-    height: 4rem;
+    height: 5rem;
   }
 
   ${display}
