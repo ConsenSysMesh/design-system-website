@@ -1,7 +1,6 @@
 import { modularScale } from 'polished'
 
 const theme = {
-
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   // fontSizes: [12, 14, 16, 20, 24, 36, 48, 80, 96],
   fontSizes: [
@@ -14,7 +13,6 @@ const theme = {
     modularScale(5, '1em', 1.25),
     modularScale(6, '1em', 1.25)
   ],
-  // fontWeights: [100, 200, 300, 400, 500],
   fonts: {
     serif: 'athelas, georgia, times, serif',
     sansSerif:

@@ -111,7 +111,7 @@ const Home = () => (
               <Heading.h1 fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
               <Heading.h2 fontSize={[2, 3]}>Installation</Heading.h2>
-              <CodeBlock code={'$ npm install literate-Rimble'} />
+              <CodeBlock code={'$ npm install rimble'} />
               <Heading.h2 fontSize={[2, 3]}>Usage</Heading.h2>
               <CodeBlock code={exampleCode} />
             </Box>
