@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { fontSize, space, color } from 'styled-system'
 
 const Text = styled.div`
-  color: inherit;
   ${fontSize}
   ${space}
   ${color}

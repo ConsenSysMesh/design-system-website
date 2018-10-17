@@ -22,9 +22,11 @@ const theme = {
     primary: 'Inter UI'
   },
   colors: {
-    primary: '#5552DC',
     black: '#000',
-    white: '#FFF'
+    'dark-grey': '#333',
+    white: '#FFF',
+    transparent: 'transparent',
+    primary: '#5552DC',
   },
   shadows: [
     '0 2px 7px 0 rgba(0,0,0,0.10)'

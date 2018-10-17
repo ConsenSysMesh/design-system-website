@@ -14,7 +14,7 @@ injectGlobal`
   }
 
   body {
-    color: black;
+    color: ${theme.colors['dark-grey']};
     font-size: 1rem;
   }
 `
