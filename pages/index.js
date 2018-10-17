@@ -49,14 +49,14 @@ const Masthead = styled(Flex)`
 
 const exampleCode = `
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Button from '@rimble-ui/Button';
 
 const App = () => (
-  <Button variant="contained" color="primary">
+  <Button color="primary" size="medium">
     Hello World
   </Button>
 );
-`;
+`
 
 const Home = () => (
   <ThemeProvider>
