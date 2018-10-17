@@ -64,8 +64,7 @@ const Home = () => (
       <Head title="Home" />
       <Nav/>
       <main role="main">
-        <Masthead backgroundImage={['none', 'url("/static/svg/fig-bg.svg")']} >
-          {/* masthead section */}
+        <Masthead backgroundImage={['none', 'none', 'url("/static/svg/fig-bg.svg")']} >
           <Container>
             <Header/>
           </Container>
