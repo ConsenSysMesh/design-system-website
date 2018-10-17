@@ -1,8 +1,4 @@
 import React from 'react'
-import NextLink from 'next/link'
-
-import Link from './Link'
-
 import styled from 'styled-components'
 
 import {
@@ -13,6 +9,9 @@ import {
   display
 } from 'styled-system'
 
+import NextLink from 'next/link'
+import Container from './Container'
+import Link from './Link'
 
 const NavWrap = styled.nav`
   position: fixed;
@@ -60,29 +59,32 @@ const LinkList = styled.ul`
 `
 
 const Nav = () => (
-  <NavWrap width={1} px={3} bg='white'>
-    <NavList display='flex' flex='row nowrap'>
-      <li>
-        {/* <NextLink prefetch href="/">
-          <Link>Home</Link>
-        </NextLink> */}
-      </li>
+  <NavWrap width={1} bg='white'>
+    <Container>
+      <NavList display='flex' flex='row nowrap'>
+        <li>
+          Rimble
+          {/* <NextLink prefetch href="/">
+            <Link>Home</Link>
+          </NextLink> */}
+        </li>
 
-      <LinkList>
-        <li>
-          <Link href="#!">v0.1.0</Link>
-        </li>
-        <li>
-          <Link href="#!">Github</Link>
-        </li>
-        <li>
-          <Link href="#!">Documentation</Link>
-        </li>
-        <li>
-          <Link href="#!">Storybook</Link>
-        </li>
-      </LinkList>
-    </NavList>
+        <LinkList>
+          <li>
+            <Link href="#!">v0.1.0</Link>
+          </li>
+          <li>
+            <Link href="#!">Github</Link>
+          </li>
+          <li>
+            <Link href="#!">Documentation</Link>
+          </li>
+          <li>
+            <Link href="#!">Storybook</Link>
+          </li>
+        </LinkList>
+      </NavList>
+    </Container>
   </NavWrap>
 )
 
