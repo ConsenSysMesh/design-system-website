@@ -73,9 +73,9 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[4, 5]}>Why Sniffle?</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Why Sniffle?</Heading.h1>
               <Hr/>
-              <Text.p>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Sniffle is here to make life easier for everyone. Components in Sniffle are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
+              <Text.p fontSize={2}>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Sniffle is here to make life easier for everyone. Components in Sniffle are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
             </Box>
             <Box my={5}>
               <Flex my={4} width={1} flexDirection={['column', 'row']}>
@@ -83,21 +83,21 @@ const Home = () => (
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-1.svg' />
                   </Flex>
-                  <Heading.h3 fontSize={[2, 4]}>Flexible</Heading.h3>
+                  <Heading.h2 fontSize={[2, 3]}>Flexible</Heading.h2>
                   <Text.p>Your tech stack and workflow are yours to decide. We impose as few constraints as possible. </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={4}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-2.svg' />
                   </Flex>
-                  <Heading.h3 fontSize={[2, 4]}>Research-driven</Heading.h3>
+                  <Heading.h2 fontSize={[2, 3]}>Research-driven</Heading.h2>
                   <Text.p>We are constantly talking to dApp designers, developers, and users to understand common challenges and effective UI patterns. </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} >
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-3.svg' />
                   </Flex>
-                  <Heading.h3 fontSize={[2, 4]}>Human</Heading.h3>
+                  <Heading.h2 fontSize={[2, 3]}>Human</Heading.h2>
                   <Text.p>Blockchain is confusing. We are a dedicated team, invested in being understandable and approachable.</Text.p>
                 </Box>
               </Flex>
@@ -108,13 +108,13 @@ const Home = () => (
           <Container>
             <Box my={5}>
               {/* body section */}
-              <Heading.h1 fontSize={[4, 5]}>Getting Started</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
-              <Heading.h3 fontSize={[2, 4]}>Installation</Heading.h3>
+              <Heading.h2 fontSize={[2, 3]}>Installation</Heading.h2>
               <Box boxShadow={0} borderRadius={0}>
                 <CodeBlock code={'$ npm install literate-sniffle'} />
               </Box>
-              <Heading.h3 fontSize={[2, 4]}>Usage</Heading.h3>
+              <Heading.h2 fontSize={[2, 3]}>Usage</Heading.h2>
               <Box boxShadow={0} borderRadius={0}>
                 <CodeBlock code={exampleCode} />
               </Box>
@@ -124,7 +124,7 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[4, 5]}>Made by ConsenSys Design</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Made by ConsenSys Design</Heading.h1>
               <Hr/>
               <Text.p>
                 Sniffle is created by the <Link href="#!">ConsenSys Design Circle.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Sniffle GitHub page.</Link>
