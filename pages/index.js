@@ -111,13 +111,9 @@ const Home = () => (
               <Heading.h1 fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
               <Heading.h2 fontSize={[2, 3]}>Installation</Heading.h2>
-              <Box boxShadow={0} borderRadius={0}>
-                <CodeBlock code={'$ npm install literate-sniffle'} />
-              </Box>
+              <CodeBlock code={'$ npm install literate-sniffle'} />
               <Heading.h2 fontSize={[2, 3]}>Usage</Heading.h2>
-              <Box boxShadow={0} borderRadius={0}>
-                <CodeBlock code={exampleCode} />
-              </Box>
+              <CodeBlock code={exampleCode} />
             </Box>
           </Container>
         </section>

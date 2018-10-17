@@ -24,6 +24,7 @@ const theme = {
   colors: {
     black: '#000',
     'dark-grey': '#333',
+    'light-grey': '#CCC',
     white: '#FFF',
     transparent: 'transparent',
     primary: '#5436D6',
