@@ -6,6 +6,8 @@ import { color } from 'styled-system'
 const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
+  font-weight: bold;
+
   ${color}
 
   &:hover {
