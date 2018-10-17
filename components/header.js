@@ -6,7 +6,7 @@ import Button from './Button'
 
 const Header = ({}) => (
   <header>
-    <Heading.h1 fontSize={[5, 7]}>Sniffle Design System</Heading.h1>
+    <Heading.h1 fontSize={[5, 7]}>Rimble Design System</Heading.h1>
     <Text.p fontSize={2} mt={3} mb={5}>Adaptable components and design standards for decentralized applications.</Text.p>
 
     <Button>Get Started</Button>

@@ -73,9 +73,9 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Why Sniffle?</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
               <Hr/>
-              <Text.p fontSize={2}>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Sniffle is here to make life easier for everyone. Components in Sniffle are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
+              <Text.p fontSize={2}>Decentralized applications (dApps) present unfamiliar challenges for users and new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. Components in Rimble are designed for common dApp UX patterns, validated through user research, and always built with developers in mind.</Text.p>
             </Box>
             <Box my={5}>
               <Flex my={4} width={1} flexDirection={['column', 'row']}>
@@ -111,7 +111,7 @@ const Home = () => (
               <Heading.h1 fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
               <Heading.h2 fontSize={[2, 3]}>Installation</Heading.h2>
-              <CodeBlock code={'$ npm install literate-sniffle'} />
+              <CodeBlock code={'$ npm install literate-Rimble'} />
               <Heading.h2 fontSize={[2, 3]}>Usage</Heading.h2>
               <CodeBlock code={exampleCode} />
             </Box>
@@ -123,7 +123,7 @@ const Home = () => (
               <Heading.h1 fontSize={[3, 4]}>Made by ConsenSys Design</Heading.h1>
               <Hr/>
               <Text.p>
-                Sniffle is created by the <Link href="#!">ConsenSys Design Circle.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Sniffle GitHub page.</Link>
+                Rimble is created by the <Link href="#!">ConsenSys Design Circle.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Rimble GitHub page.</Link>
               </Text.p>
             </Box>
           </Container>
