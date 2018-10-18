@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import ReactSVG from 'react-svg'
 import Link from './Link'
 
-const StyledMenu = styled.div`
+const StyledWrap = styled.div`
   position: relative;
 `
 
@@ -89,7 +89,7 @@ class Menu extends Component {
 
   render() {
     return (
-      <StyledMenu>
+      <StyledWrap>
         <StyledToggle onClick={this._handleToggle}>
           <ReactSVG src='static/svg/baseline-menu-24px.svg' />
         </StyledToggle>
@@ -109,7 +109,7 @@ class Menu extends Component {
             </li>
           </ul>
         </StyledList>
-      </StyledMenu>
+      </StyledWrap>
     );
   }
 
