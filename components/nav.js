@@ -9,9 +9,8 @@ import {
   display
 } from 'styled-system'
 
-import NextLink from 'next/link'
 import Container from './Container'
-import Link from './Link'
+import NavMenu from './navMenu'
 
 const NavWrap = styled.nav`
   position: fixed;
@@ -46,43 +45,14 @@ const NavList = styled.ul`
   ${flex}
 `
 
-const LinkList = styled.ul`
-  & {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  > li + li {
-    margin-left: 1rem;
-  }
-`
-
 const Nav = () => (
   <NavWrap width={1} bg='white'>
     <Container>
       <NavList display='flex' flex='row nowrap'>
         <li>
-          Rimble
-          {/* <NextLink prefetch href="/">
-            <Link>Home</Link>
-          </NextLink> */}
+          <b>Rimble</b>
         </li>
-        
-        <LinkList>
-          <li>
-            <Link href="#!">v0.1.0</Link>
-          </li>
-          <li>
-            <Link href="#!">Github</Link>
-          </li>
-          <li>
-            <Link href="#!">Documentation</Link>
-          </li>
-          <li>
-            <Link href="#!">Storybook</Link>
-          </li>
-        </LinkList>
+        <NavMenu></NavMenu>
       </NavList>
     </Container>
   </NavWrap>
