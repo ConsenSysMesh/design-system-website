@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import ReactSVG from 'react-svg'
 import Link from './Link'
+import Text from './Text'
 
 const StyledWrap = styled.div`
   position: relative;
@@ -62,12 +63,13 @@ const StyledList = styled.div`
 
   > ul > li {
     background: inherit;
-    line-height: 1rem;
+    line-height: 2rem;
     padding: 1rem 1rem;
     border-top: 1px solid lightgrey;
 
     @media (min-width: 1024px) {
       border-top: none;
+      padding: 0 0 0 1rem;
     }
   }
 `
@@ -96,7 +98,7 @@ class Menu extends Component {
         <StyledList hidden={!this.state.isOpen} >
           <ul>
             <li>
-              <Link href="#!">v0.1.0</Link>
+              <Text fontSize={1} fontWeight={1} color={'mid-grey'}>v0.1.0</Text>
             </li>
             <li>
               <Link href="#!">Github</Link>
