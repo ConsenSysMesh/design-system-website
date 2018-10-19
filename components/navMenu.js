@@ -19,6 +19,7 @@ const StyledToggle = styled.div`
     }
   }
   svg {
+    fill: ${props => props.theme.colors.primary};
     display: block;
     height: 2rem;
     width: 2.5rem;
