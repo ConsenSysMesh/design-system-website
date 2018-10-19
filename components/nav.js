@@ -11,6 +11,7 @@ import {
 
 import Container from './Container'
 import NavMenu from './navMenu'
+import Heading from './Heading'
 
 const NavWrap = styled.nav`
   position: fixed;
@@ -50,7 +51,7 @@ const Nav = () => (
     <Container>
       <NavList display='flex' flex='row nowrap'>
         <li>
-          <b>Rimble</b>
+          <Heading.h1 fontSize={[1, 2]} fontWeight={1} color={'mid-grey'}>Rimble Design System</Heading.h1>
         </li>
         <NavMenu></NavMenu>
       </NavList>
