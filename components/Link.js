@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { color } from 'styled-system'
+import { color, fontWeight, fontSize } from 'styled-system'
 
 const Link = styled.a`
   cursor: pointer;
@@ -9,6 +9,8 @@ const Link = styled.a`
   font-weight: bold;
 
   ${color}
+  ${fontSize}
+  ${fontWeight}
 
   &:hover {
     text-decoration: underline;
