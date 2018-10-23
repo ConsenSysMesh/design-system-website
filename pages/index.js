@@ -123,7 +123,7 @@ const Home = () => (
               <Heading.h1 fontSize={[3, 4]}>Made by ConsenSys Design</Heading.h1>
               <Hr/>
               <Text.p>
-                Rimble is created by <Link href="#!">ConsenSys Design.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href="#!">Rimble</Link> GitHub page.
+                Rimble is created by <Link href='//consensys.design/' target='_blank' rel='noopener'>ConsenSys Design.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Rimble</Link> GitHub page.
               </Text.p>
             </Box>
           </Container>

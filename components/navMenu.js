@@ -102,13 +102,13 @@ class Menu extends Component {
               <Text fontSize={1} fontWeight={1} color={'mid-grey'}>v0.1.0</Text>
             </li>
             <li>
-              <Link href="#!">Github</Link>
+              <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Github</Link>
             </li>
             <li>
-              <Link href="#!">Documentation</Link>
+              <Link href='//github.com/ConsenSys/rimble-ui/blob/master/README.md' target='_blank' rel='noopener'>Documentation</Link>
             </li>
             <li>
-              <Link href="#!">Storybook</Link>
+              <Link href='//consensys.github.io/rimble-ui/' target='_blank' rel='noopener'>Storybook</Link>
             </li>
           </ul>
         </StyledList>
