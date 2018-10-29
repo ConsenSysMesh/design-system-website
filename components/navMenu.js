@@ -14,6 +14,7 @@ const StyledToggle = styled.div`
   & {
     position: relative;
     z-index: 2;
+    cursor: pointer;
     @media (min-width: 1024px) {
       display: none;
     }
@@ -99,7 +100,7 @@ class Menu extends Component {
         <StyledList hidden={!this.state.isOpen} >
           <ul>
             <li>
-              <Text fontSize={1} fontWeight={1} color={'mid-grey'}>v0.1.0</Text>
+              <Text fontSize={1} fontWeight={1} color={'mid-grey'}>v0.1.1</Text>
             </li>
             <li>
               <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Github</Link>
