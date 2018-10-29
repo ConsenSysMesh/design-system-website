@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     return (
       <html lang='en'>
         <Head>
-          <title>My page</title>
+          <title>Rimble Design System</title>
           {this.props.styleTags}
         </Head>
         <body>
