@@ -60,7 +60,8 @@ const App = () => (
 
 const Home = () => (
   <ThemeProvider>
-    <div>
+    <React.Fragment>
+      <Typography />
       <Head title="Home" />
       <Nav/>
       <main role="main">
@@ -108,7 +109,7 @@ const Home = () => (
           <Container>
             <Box my={5}>
               {/* body section */}
-              <Heading.h1 fontSize={[3, 4]}>Getting Started</Heading.h1>
+              <Heading.h1 id='getting-started' fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
               <Heading.h2 fontSize={2} fontWeight={1}>Installation</Heading.h2>
               <CodeBlock code={'$ npm install rimble'} />
@@ -130,7 +131,7 @@ const Home = () => (
         </section>
       </main>
       <Footer/>
-    </div>
+    </React.Fragment>
   </ThemeProvider>
 )
 

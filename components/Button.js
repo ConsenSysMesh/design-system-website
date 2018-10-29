@@ -13,6 +13,8 @@ const Button = styled.button.attrs({
   bgcolor: props => props.theme.colors.primary,
   hovercolor: props => tint(0.1, props.theme.colors.primary)
 })`
+  display: inline-block;
+  text-align: center;
   font: inherit;
   color: inherit;
   border: none;
@@ -25,6 +27,7 @@ const Button = styled.button.attrs({
   font-size: 1rem;
   font-weight: bold;
   height: 56px;
+  line-height: 56px;
   padding: 0 2rem;
   border-radius: 4px;
   box-shadow:

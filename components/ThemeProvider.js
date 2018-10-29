@@ -1,26 +1,8 @@
 import {
-  ThemeProvider as StyledThemeProvider,
-  injectGlobal
+  ThemeProvider as StyledThemeProvider
 } from 'styled-components'
 
 import theme from './theme'
-
-injectGlobal`
-  html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  body {
-    margin: 0;
-    background: white;
-    width: auto;
-    max-width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-`
 
 const ThemeProvider = ({...props}) => {
   return (
