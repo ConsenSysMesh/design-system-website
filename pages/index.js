@@ -48,14 +48,19 @@ const Masthead = styled(Flex)`
 `
 
 const exampleCode = `
-import React from 'react';
-import Button from '@rimble-ui/Button';
+import React, { Component } from 'react'
 
-const App = () => (
-  <Button color="primary" size="medium">
-    Hello World
-  </Button>
-);
+import { Button } from 'rimble-ui'
+
+class Example extends Component {
+  render () {
+    return (
+      <Button size={'medium'}>
+        Click me!
+      </Button>
+    )
+  }
+}
 `
 
 const Home = () => (
@@ -112,7 +117,7 @@ const Home = () => (
               <Heading.h1 id='getting-started' fontSize={[3, 4]}>Getting Started</Heading.h1>
               <Hr/>
               <Heading.h2 fontSize={2} fontWeight={1}>Installation</Heading.h2>
-              <CodeBlock code={'$ npm install rimble'} />
+              <CodeBlock code={'$ npm install --save rimble-ui styled-components'} />
               <Heading.h2 fontSize={2} fontWeight={1}>Usage</Heading.h2>
               <CodeBlock code={exampleCode} />
             </Box>
