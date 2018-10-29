@@ -67,7 +67,7 @@ const Home = () => (
   <ThemeProvider>
     <React.Fragment>
       <Typography />
-      <Head title="Home" />
+      <Head title="Rimble Design System" />
       <Nav/>
       <main role="main">
         <Masthead backgroundImage={['none', 'none', 'url("/static/svg/fig-bg.svg")']} >
