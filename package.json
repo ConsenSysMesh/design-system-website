@@ -1,5 +1,5 @@
 {
-  "name": "create-next-example-app",
+  "name": "rimble-consensys-design-landing",
   "scripts": {
     "dev": "next",
     "build": "next build",
