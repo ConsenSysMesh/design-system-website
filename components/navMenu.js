@@ -106,10 +106,7 @@ class Menu extends Component {
               <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Github</Link>
             </li>
             <li>
-              <Link href='//github.com/ConsenSys/rimble-ui/blob/master/README.md' target='_blank' rel='noopener'>Documentation</Link>
-            </li>
-            <li>
-              <Link href='//consensys.github.io/rimble-ui/' target='_blank' rel='noopener'>Storybook</Link>
+              <Link href='//consensys.github.io/rimble-ui/' target='_blank' rel='noopener'>Documentation</Link>
             </li>
           </ul>
         </StyledList>
