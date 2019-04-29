@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import ReactSVG from 'react-svg'
-import Link from './Link'
-import Text from './Text'
+import ReactSVG from "react-svg";
+import Link from "./Link";
+import Text from "./Text";
 
 const StyledWrap = styled.div`
   position: relative;
-`
+`;
 
 const StyledToggle = styled.div`
   & {
@@ -25,7 +25,7 @@ const StyledToggle = styled.div`
     height: 2rem;
     width: 2.5rem;
   }
-`
+`;
 
 const StyledList = styled.div`
   & {
@@ -55,7 +55,7 @@ const StyledList = styled.div`
 
     display: flex;
     flex-flow: column;
-    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 
     @media (min-width: 1024px) {
       flex-flow: row nowrap;
@@ -74,7 +74,7 @@ const StyledList = styled.div`
       padding: 0 0 0 1rem;
     }
   }
-`
+`;
 
 class Menu extends Component {
   constructor(props) {
@@ -84,36 +84,49 @@ class Menu extends Component {
     };
   }
 
-  _handleToggle = (e) => {
-    e.preventDefault()
-    this.setState((state) => ({
+  _handleToggle = e => {
+    e.preventDefault();
+    this.setState(state => ({
       isOpen: !state.isOpen
-    }))
-  }
+    }));
+  };
 
   render() {
     return (
       <StyledWrap>
         <StyledToggle onClick={this._handleToggle}>
-          <ReactSVG src='static/svg/baseline-menu-24px.svg' />
+          <ReactSVG src="static/svg/baseline-menu-24px.svg" />
         </StyledToggle>
-        <StyledList hidden={!this.state.isOpen} >
+        <StyledList hidden={!this.state.isOpen}>
           <ul>
             <li>
-              <Text fontSize={1} fontWeight={1} color={'mid-grey'}>v0.7.0</Text>
+              <Text fontSize={1} fontWeight={1} color={"mid-grey"}>
+                v0.7.1
+              </Text>
             </li>
             <li>
-              <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Github</Link>
+              <Link
+                href="//github.com/ConsenSys/rimble-ui"
+                target="_blank"
+                rel="noopener"
+              >
+                Github
+              </Link>
             </li>
             <li>
-              <Link href='//consensys.github.io/rimble-ui/' target='_blank' rel='noopener'>Documentation</Link>
+              <Link
+                href="//consensys.github.io/rimble-ui/"
+                target="_blank"
+                rel="noopener"
+              >
+                Documentation
+              </Link>
             </li>
           </ul>
         </StyledList>
       </StyledWrap>
     );
   }
-
 }
 
 export default Menu;
