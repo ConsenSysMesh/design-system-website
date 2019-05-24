@@ -100,13 +100,7 @@ class Menu extends Component {
         <StyledList hidden={!this.state.isOpen} >
           <ul>
             <li>
-              <Text fontSize={1} fontWeight={1} color={'mid-grey'}>v0.6.0</Text>
-            </li>
-            <li>
-              <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Github</Link>
-            </li>
-            <li>
-              <Link href='//consensys.github.io/rimble-ui/' target='_blank' rel='noopener'>Documentation</Link>
+              <Link href='https://consensys.github.io/rimble-app-demo/' target='_blank' rel='noopener'>Try demo</Link>
             </li>
           </ul>
         </StyledList>

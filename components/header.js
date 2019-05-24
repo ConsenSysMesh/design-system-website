@@ -3,14 +3,14 @@ import React from 'react'
 import Text from './Text'
 import Heading from './Heading'
 import Button from './Button'
+import Link from './Link'
 
 const Header = ({}) => (
   <header>
-    <Heading.h1 fontSize={[5, 7]} pr={[3, 6]}>Rimble Design System</Heading.h1>
-    <Text.p fontSize={2} mt={3} mb={5} pr={[3, 6]}>Adaptable components and design standards for decentralized applications.</Text.p>
-
-    <Button as="a" href="#getting-started" width={['100%', 'auto']} mr={[0, 3]} mb={[3, 0]}>Get Started</Button>
-    <Button.outline as="a" href='//consensys.github.io/rimble-ui/' target='_blank' rel='noopener' width={['100%', 'auto']}>Documentation</Button.outline>
+    <Heading.h1 fontSize={[5, 7]} pr={[3, 6]}>Hi, we're Rimble 👋</Heading.h1>
+    <Heading.h2 fontSize={[2, 3]} my={3}>
+      We've got open-source guides, tools and React components to help you <Link href="#build">build</Link> dApps with great user experience. We solve UX problems common to all Ethereum products so you can focus on what's unique about your dApp. Everything we <Link href="#learn">learn</Link> goes in our guides.
+    </Heading.h2>
   </header>
 );
 

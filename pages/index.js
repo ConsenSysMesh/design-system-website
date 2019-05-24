@@ -7,6 +7,7 @@ import ThemeProvider from '../components/ThemeProvider'
 import Typography from '../components/typography'
 import Container from '../components/Container'
 import CodeBlock from '../components/CodeBlock'
+import Button from '../components/Button'
 import Heading from '../components/Heading'
 import Text from '../components/Text'
 import Hr from '../components/Hr'
@@ -47,89 +48,99 @@ const Masthead = styled(Flex)`
   ${backgroundImage}
 `
 
-const exampleCode = `
-import React, { Component } from 'react'
 
-import { Button } from 'rimble-ui'
-
-class Example extends Component {
-  render () {
-    return (
-      <Button size={'medium'}>
-        Click me!
-      </Button>
-    )
-  }
-}
-`
 
 const Home = () => (
   <ThemeProvider>
     <React.Fragment>
       <Typography />
-      <Head title="Rimble Design System" />
+      <Head title="Rimble – Open-source components and guides for building amazing dApps" />
       <Nav/>
       <main role="main">
-        <Masthead backgroundImage={['none', 'none', 'url("/static/svg/fig-bg.svg")']} >
+        <Masthead>
           <Container>
             <Header/>
           </Container>
         </Masthead>
-        <section>
+        
+
+
+
+        <section id="build">
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
+              <Heading.h3 mt={3} fontSize={[1, 2]} >👷‍♀️ Build</Heading.h3>
               <Hr/>
-              <Text.p fontSize={[1, 2]}>
-                Decentralized applications (dApps) require users to learn new patterns and they present new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. As an open source project, Rimble aims to create common dApp UX patterns, validated through user research, and built for developers.
-              </Text.p>
-
+              <Text.p>dApp component libraries</Text.p>
               <Flex mt={4} width={1} flexDirection={['column', 'row']}>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
+                <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-1.svg' />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Flexible</Heading.h2>
-                  <Text.p>Your tech stack and workflow are yours to decide. We impose as few constraints as possible. </Text.p>
+                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble UI</Heading.h2>
+                  <Text.p>Clean, customisable building blocks for putting your interface together, including UI for Ethereum concepts.</Text.p>
+                  <Button.outline mt={3} mr={5} mb={5} href='https://github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Get the code</Button.outline>
+                  <Link mt={3} ml={5} mb={5} href='https://consensys.github.io/rimble-ui/?path=/story/getting-started--welcome' target='_blank' rel='noopener'>Read the docs</Link>
                 </Box>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
+                <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-2.svg' />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Research-driven</Heading.h2>
-                  <Text.p>We are constantly talking to dApp designers, developers, and users to understand common challenges and effective UI patterns. </Text.p>
-                </Box>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} >
-                  <Flex my={3}>
-                    <ReactSVG src='static/svg/fig-3.svg' />
-                  </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Human</Heading.h2>
-                  <Text.p>Blockchain is confusing. We are a dedicated team, invested in being understandable and approachable.</Text.p>
+                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble Web3</Heading.h2>
+                  <Text.p>Drop-in components that solve an Ethereum UX problem out of the box. Configure some inputs and you're ready.   </Text.p>
+                  <Button.outline mt={3} mr={5} href='https://github.com/ConsenSys/rimble-web3-components' target='_blank' rel='noopener'>Get the code</Button.outline>
+                  <Link disabled mt={3} ml={5} href='https://rimble-web3-components.netlify.com/?path=/story/connectionbanner--wrong-network-default' target='_blank' rel='noopener'>Docs coming soon!</Link>
                 </Box>
               </Flex>
             </Box>
           </Container>
         </section>
+
         <section>
           <Container>
-            <Box my={5}>
-              {/* body section */}
-              <Heading.h1 id='getting-started' fontSize={[3, 4]}>Getting Started</Heading.h1>
-              <Hr/>
-              <Heading.h2 fontSize={2} fontWeight={1}>Installation</Heading.h2>
-              <CodeBlock code={'$ npm install --save rimble-ui styled-components'} />
-              <Heading.h2 fontSize={2} fontWeight={1}>Usage</Heading.h2>
-              <CodeBlock code={exampleCode} />
+          <Heading.h3 fontSize={[1, 2]} id="learn">🤓 Learn</Heading.h3>
+
+          <Text.p>Research-led guides for creating user-friendly blockchain experiences</Text.p>
+          <Hr/>
+          <Flex mt={4} width={1} flexDirection={['column', 'row']}>
+            <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
+              <Flex my={3}>
+                <ReactSVG src='static/svg/fig-3.svg' />
+              </Flex>
+              <Heading.h2 fontSize={[2, 3]} fontWeight={1}>UX</Heading.h2>
+              <Text.p>In-depth pieces on designing patterns that help your users navigate Ethereum.</Text.p>
+              <Link disabled mt={3} ml={5} href='#' target='_blank' rel='noopener'>Guide coming soon!</Link>
             </Box>
+            <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
+              <Flex my={3}>
+                <ReactSVG src='static/svg/fig-4.svg' />
+              </Flex>
+              <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Content</Heading.h2>
+              <Text.p>Tips on designing dApps that talk sense – how to design the words in your dApp. </Text.p>
+              <Link disabled mt={3} ml={5} href='#' target='_blank' rel='noopener'>Guide coming soon!</Link>
+            </Box>
+            <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
+              <Flex my={3}>
+                <ReactSVG src='static/svg/fig-3.svg' />
+              </Flex>
+              <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Design</Heading.h2>
+              <Text.p>Guidelines for styling Rimble components to fit your product's brand.</Text.p>
+              <Link disabled mt={3} ml={5} href='#' target='_blank' rel='noopener'>Guide coming soon!</Link>
+            </Box>
+          </Flex>
+
           </Container>
         </section>
+
+
+
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Made by ConsenSys Design</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Contribute to Rimble</Heading.h1>
               <Hr/>
               <Text.p>
-                Rimble is created by <Link href='//consensys.design/' target='_blank' rel='noopener'>ConsenSys Design.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Rimble</Link> GitHub page.
+                 Want to help us define the roadmap? Submit feedback or feature requests on our GitHub pages.
               </Text.p>
             </Box>
           </Container>
