@@ -69,7 +69,7 @@ const Home = () => (
         <section id="build">
           <Container>
             <Box my={5}>
-              <Heading.h3 mt={3} fontSize={[1, 2]} >👷‍♀️ Build</Heading.h3>
+              <Heading.h3 mt={3} fontSize={[3, 4]} >Build 👷‍♀️</Heading.h3>
               <Hr/>
               <Text.p>Your backlog is already *this* big. And we've already designed, tested and built these. Makes sense right?</Text.p>
               <Flex mt={4} width={1} flexDirection={['column', 'row']}>
@@ -98,7 +98,7 @@ const Home = () => (
 
         <section>
           <Container>
-          <Heading.h3 fontSize={[1, 2]} id="learn">🤓 Learn</Heading.h3>
+          <Heading.h3 fontSize={[3, 4]} id="learn">Learn 🤓</Heading.h3>
 
           <Text.p>Research-led guides for creating user-friendly blockchain experiences</Text.p>
           <Hr/>
@@ -136,7 +136,7 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Why Rimble? 🤔</Heading.h1>
               <Hr/>
               <Flex mt={4} width={1} flexDirection={['column', 'row']}>
                 <Box alignItems="center" justifyContent="center" flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
@@ -164,7 +164,7 @@ const Home = () => (
         <section>
           <Container>
             <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Contribute to Rimble</Heading.h1>
+              <Heading.h1 fontSize={[3, 4]}>Contribute to Rimble 🏅</Heading.h1>
               <Hr/>
               <Text.p>
                  Want to help us define the roadmap? Submit feedback or feature requests on our GitHub pages.
