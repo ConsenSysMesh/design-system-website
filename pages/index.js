@@ -57,12 +57,12 @@ const Home = () => (
       <Head title="Rimble – Open-source components and guides for building amazing dApps" />
       <Nav/>
       <main role="main">
-        <Masthead>
+        <Masthead backgroundImage={['none', 'none', 'url("/static/svg/fig-bg.svg")']} >
           <Container>
             <Header/>
           </Container>
         </Masthead>
-        
+
 
 
 
