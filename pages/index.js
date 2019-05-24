@@ -133,6 +133,33 @@ const Home = () => (
         </section>
 
 
+        <section>
+          <Container>
+            <Box my={5}>
+              <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
+              <Hr/>
+              <Flex mt={4} width={1} flexDirection={['column', 'row']}>
+                <Box alignItems="center" justifyContent="center" flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
+                    <ReactSVG src='static/svg/fig-3.svg' />
+                </Box>
+                <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
+                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Solve the problems you care about, not the blockchain ones</Heading.h2>
+                  <Text.p>Don't let blockchain usability issues get in the way of your vision.</Text.p>
+                </Box>
+              </Flex>
+              <Flex mt={4} width={1} flexDirection={['column', 'row']}>
+                <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
+                <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Got more ideas than time?</Heading.h2>
+                <Text.p>Rimble helps those with more ideas than time – our components include functionality out of the box that we've already designed, tested and iterated on. </Text.p>
+                </Box>
+                <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
+                    <ReactSVG src='static/svg/fig-3.svg' />
+                </Box>
+              </Flex>
+            </Box>
+          </Container>
+        </section>
+
 
         <section>
           <Container>
