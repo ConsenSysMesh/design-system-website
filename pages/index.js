@@ -57,7 +57,7 @@ const Home = () => (
       <Head title="Rimble – Open-source components and guides for building amazing dApps" />
       <Nav/>
       <main role="main">
-        <Masthead backgroundImage={['none', 'none', 'url("/static/svg/fig-bg.svg")']} >
+        <Masthead backgroundImage={['url("/static/svg/fig-1.svg")']} >
           <Container>
             <Header/>
           </Container>
@@ -71,7 +71,7 @@ const Home = () => (
             <Box my={5}>
               <Heading.h3 mt={3} fontSize={[1, 2]} >👷‍♀️ Build</Heading.h3>
               <Hr/>
-              <Text.p>dApp component libraries</Text.p>
+              <Text.p>Your backlog is already *this* big. And we've already designed, tested and built these. Makes sense right?</Text.p>
               <Flex mt={4} width={1} flexDirection={['column', 'row']}>
                 <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
                   <Flex my={3}>
