@@ -75,16 +75,7 @@ const Home = () => (
             <Header/>
           </Container>
         </Masthead>
-        <section>
-          <Container>
-            <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Why Rimble?</Heading.h1>
-              <Hr/>
-              <Text.p fontSize={[1, 2]}>
-                Decentralized applications (dApps) require users to learn new patterns and they present new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. As an open source project, Rimble aims to create common dApp UX patterns, validated through user research, and built for developers.
-              </Text.p>
-            </Box>
-          </Container>
+        <section id="build">
               <Container>
                 <Box my={5}>
                   <Heading.h3 mt={3} fontSize={[3, 4]} >Get building</Heading.h3>
@@ -97,8 +88,8 @@ const Home = () => (
                       </Flex>
                       <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble UI</Heading.h2>
                       <Text.p>Clean, customisable building blocks for putting your interface together, including UI for Ethereum concepts.</Text.p>
-                      <Button.outline mt={3} mr={5} mb={5} href='https://github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Get the code</Button.outline>
-                      <Link mt={3} ml={5} mb={5} href='https://consensys.github.io/rimble-ui/?path=/story/getting-started--welcome' target='_blank' rel='noopener'>Read the docs</Link>
+                      <Button href='https://github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Get the code</Button>
+                      <Link href='https://consensys.github.io/rimble-ui/?path=/story/getting-started--welcome' target='_blank' rel='noopener'>Read the docs</Link>
                     </Box>
                     <Box flex={'1 1 auto'} width={[1, 1, 1/3]} mr={5}>
                       <Flex my={3}>
@@ -106,21 +97,32 @@ const Home = () => (
                       </Flex>
                       <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble Web3</Heading.h2>
                       <Text.p>Drop-in components that solve an Ethereum UX problem out of the box. Configure some inputs and you're ready.   </Text.p>
-                      <Button.outline mt={3} mr={5} href='https://github.com/ConsenSys/rimble-web3-components' target='_blank' rel='noopener'>Get the code</Button.outline>
-                      <Link disabled mt={3} ml={5} href='https://rimble-web3-components.netlify.com/?path=/story/connectionbanner--wrong-network-default' target='_blank' rel='noopener'>Docs coming soon!</Link>
+                      <Button href='https://github.com/ConsenSys/rimble-web3-components' target='_blank' rel='noopener'>Get the code</Button>
+                      <Link disabled mt={3} ml={5} href='https://rimble-web3-components.netlify.com/?path=/story/connectionbanner--wrong-network-default' target='_blank' rel='noopener'>Read the docs</Link>
                     </Box>
                     <Box flex={'1 1 auto'} width={[1, 1, 1/3]} mr={5}>
                       <Flex my={3}>
                         <ReactSVG src='static/svg/fig-3.svg' />
                       </Flex>
                       <Heading.h2 fontSize={[2, 3]} fontWeight={1}>dApp patterns</Heading.h2>
-                      <Text.p>Drop-in components that solve an Ethereum UX problem out of the box. Configure some inputs and you're ready.   </Text.p>
-                      <Button.outline mt={3} mr={5} href='https://github.com/ConsenSys/rimble-web3-components' target='_blank' rel='noopener'>Get the code</Button.outline>
-                      <Link disabled mt={3} ml={5} href='https://rimble-web3-components.netlify.com/?path=/story/connectionbanner--wrong-network-default' target='_blank' rel='noopener'>Docs coming soon!</Link>
+                      <Text.p>In-depth pieces on designing patterns and workflows that help your users navigate Ethereum.</Text.p>
+                      <Button href='https://github.com/ConsenSys/rimble-web3-components' target='_blank' rel='noopener'>Read the guides</Button>
                     </Box>
                   </Flex>
                 </Box>
               </Container>
+        </section>
+        <section>
+        <Container>
+          <Box my={5}>
+            <Heading.h1 fontSize={[3, 4]}>See Rimble in action</Heading.h1>
+            <Hr/>
+            <Text.p fontSize={[1, 2]}>
+              We test out our components and hypotheses using our demo dApp.
+            </Text.p>
+            <Button>Try the demo</Button>
+          </Box>
+        </Container>
         </section>
         <section>
           <Container>
