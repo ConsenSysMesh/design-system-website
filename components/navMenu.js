@@ -97,33 +97,7 @@ class Menu extends Component {
         <StyledToggle onClick={this._handleToggle}>
           <ReactSVG src="static/svg/baseline-menu-24px.svg" />
         </StyledToggle>
-        <StyledList hidden={!this.state.isOpen}>
-          <ul>
-            <li>
-              <Text fontSize={1} fontWeight={1} color={"mid-grey"}>
-                v0.8.0
-              </Text>
-            </li>
-            <li>
-              <Link
-                href="//github.com/ConsenSys/rimble-ui"
-                target="_blank"
-                rel="noopener"
-              >
-                Github
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="//consensys.github.io/rimble-ui/"
-                target="_blank"
-                rel="noopener"
-              >
-                Documentation
-              </Link>
-            </li>
-          </ul>
-        </StyledList>
+        
       </StyledWrap>
     );
   }

@@ -89,21 +89,22 @@ const Home = () => (
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-1.svg' />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Flexible</Heading.h2>
+                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble UI</Heading.h2>
                   <Text.p>Your tech stack and workflow are yours to decide. We impose as few constraints as possible. </Text.p>
                 </Box>
+
                 <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-2.svg' />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Research-driven</Heading.h2>
+                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Web3 components</Heading.h2>
                   <Text.p>We are constantly talking to dApp designers, developers, and users to understand common challenges and effective UI patterns. </Text.p>
                 </Box>
                 <Box flex={'1 1 auto'} width={[1, 1/3]} >
                   <Flex my={3}>
                     <ReactSVG src='static/svg/fig-3.svg' />
                   </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Human</Heading.h2>
+                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>dApp patterns</Heading.h2>
                   <Text.p>Blockchain is confusing. We are a dedicated team, invested in being understandable and approachable.</Text.p>
                 </Box>
               </Flex>
