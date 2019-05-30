@@ -11,7 +11,7 @@ import Heading from '../components/Heading'
 import Text from '../components/Text'
 import Hr from '../components/Hr'
 import {Flex, Box} from '../components/Box'
-
+import { Button } from 'rimble-ui'
 import Head from '../components/head'
 import Nav from '../components/nav'
 import Header from '../components/header'
@@ -83,33 +83,35 @@ const Home = () => (
               <Text.p fontSize={[1, 2]}>
                 Decentralized applications (dApps) require users to learn new patterns and they present new hurdles for designers and front-end developers. Rimble is here to make life easier for everyone. As an open source project, Rimble aims to create common dApp UX patterns, validated through user research, and built for developers.
               </Text.p>
-
-              <Flex mt={4} width={1} flexDirection={['column', 'row']}>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
-                  <Flex my={3}>
-                    <ReactSVG src='static/svg/fig-1.svg' />
-                  </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble UI</Heading.h2>
-                  <Text.p>Your tech stack and workflow are yours to decide. We impose as few constraints as possible. </Text.p>
-                </Box>
-
-                <Box flex={'1 1 auto'} width={[1, 1/3]} mr={5}>
-                  <Flex my={3}>
-                    <ReactSVG src='static/svg/fig-2.svg' />
-                  </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Web3 components</Heading.h2>
-                  <Text.p>We are constantly talking to dApp designers, developers, and users to understand common challenges and effective UI patterns. </Text.p>
-                </Box>
-                <Box flex={'1 1 auto'} width={[1, 1/3]} >
-                  <Flex my={3}>
-                    <ReactSVG src='static/svg/fig-3.svg' />
-                  </Flex>
-                  <Heading.h2 fontSize={[2, 3]} fontWeight={1}>dApp patterns</Heading.h2>
-                  <Text.p>Blockchain is confusing. We are a dedicated team, invested in being understandable and approachable.</Text.p>
-                </Box>
-              </Flex>
             </Box>
           </Container>
+              <Container>
+                <Box my={5}>
+                  <Heading.h3 mt={3} fontSize={[3, 4]} >Build 👷‍♀️</Heading.h3>
+                  <Hr/>
+                  <Text.p>Your backlog is already *this* big. And we've already designed, tested and built these. Makes sense right?</Text.p>
+                  <Flex mt={4} width={1} flexDirection={['column', 'row']}>
+                    <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
+                      <Flex my={3}>
+                        <ReactSVG src='static/svg/fig-1.svg' />
+                      </Flex>
+                      <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble UI</Heading.h2>
+                      <Text.p>Clean, customisable building blocks for putting your interface together, including UI for Ethereum concepts.</Text.p>
+                      <Button.outline mt={3} mr={5} mb={5} href='https://github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Get the code</Button.outline>
+                      <Link mt={3} ml={5} mb={5} href='https://consensys.github.io/rimble-ui/?path=/story/getting-started--welcome' target='_blank' rel='noopener'>Read the docs</Link>
+                    </Box>
+                    <Box flex={'1 1 auto'} width={[1, 1/2]} mr={5}>
+                      <Flex my={3}>
+                        <ReactSVG src='static/svg/fig-2.svg' />
+                      </Flex>
+                      <Heading.h2 fontSize={[2, 3]} fontWeight={1}>Rimble Web3</Heading.h2>
+                      <Text.p>Drop-in components that solve an Ethereum UX problem out of the box. Configure some inputs and you're ready.   </Text.p>
+                      <Button.outline mt={3} mr={5} href='https://github.com/ConsenSys/rimble-web3-components' target='_blank' rel='noopener'>Get the code</Button.outline>
+                      <Link disabled mt={3} ml={5} href='https://rimble-web3-components.netlify.com/?path=/story/connectionbanner--wrong-network-default' target='_blank' rel='noopener'>Docs coming soon!</Link>
+                    </Box>
+                  </Flex>
+                </Box>
+              </Container>
         </section>
         <section>
           <Container>
