@@ -87,7 +87,7 @@ const Home = () => (
           </Container>
               <Container>
                 <Box my={5}>
-                  <Heading.h3 mt={3} fontSize={[3, 4]} >Get building 👷‍♀️</Heading.h3>
+                  <Heading.h3 mt={3} fontSize={[3, 4]} >Get building</Heading.h3>
                   <Hr/>
                   <Text.p>Your backlog is already *this* big. And we've already designed, tested and built these. Makes sense right?</Text.p>
                   <Flex mt={4} width={1} flexDirection={['column', 'row']}>
@@ -128,24 +128,20 @@ const Home = () => (
               {/* body section */}
               <Heading.h1 id='getting-started' fontSize={[3, 4]}>Contribute to Rimble</Heading.h1>
               <Hr/>
-              <Heading.h2 fontSize={2} fontWeight={1}>Installation</Heading.h2>
-              <CodeBlock code={'$ npm install --save rimble-ui styled-components'} />
-              <Heading.h2 fontSize={2} fontWeight={1}>Usage</Heading.h2>
-              <CodeBlock code={exampleCode} />
+              <Box mb={4}>
+              <Text>Submit feedback or feature requests directly in our GitHub repos.</Text>
+              </Box>
+              <Box>
+              <Text fontSize={[1,2]}>🍴 Fork the repo on GitHub</Text>
+              <Text fontSize={[1,2]}>👯‍♀️ Clone the project to your own machine</Text>
+              <Text fontSize={[1,2]}>🌱 Commit changes to your own branch</Text>
+              <Text fontSize={[1,2]}>☝️ Push your work back up to your fork</Text>
+              <Text fontSize={[1,2]}>👀 Submit a Pull request and we will review your changes</Text>
+              </Box>
             </Box>
           </Container>
         </section>
-        <section>
-          <Container>
-            <Box my={5}>
-              <Heading.h1 fontSize={[3, 4]}>Made by ConsenSys Design</Heading.h1>
-              <Hr/>
-              <Text.p>
-                Rimble is created by <Link href='//consensys.design/' target='_blank' rel='noopener'>ConsenSys Design.</Link> Want to help us define the roadmap? Submit feedback or feature requests on the <Link href='//github.com/ConsenSys/rimble-ui' target='_blank' rel='noopener'>Rimble</Link> GitHub page.
-              </Text.p>
-            </Box>
-          </Container>
-        </section>
+
       </main>
       <Footer/>
     </React.Fragment>
