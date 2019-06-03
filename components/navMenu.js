@@ -101,7 +101,7 @@ class Menu extends Component {
           <ul>
             <li>
               <Text fontSize={1} fontWeight={1} color={"mid-grey"}>
-                v0.8.0
+                v0.9.0
               </Text>
             </li>
             <li>
